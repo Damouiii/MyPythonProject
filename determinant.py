@@ -3,7 +3,7 @@ import numpy as np
 
 def smaller_matrix(matrix, row, column):
     result = np.delete(matrix, column, 1)
-    result = np.delete(matrix, row, 0)
+    result = np.delete(result, row, 0)
     return result
 
 
@@ -31,3 +31,4 @@ np_det = np.linalg.det(matrix)
 
 print(a)
 print(np_det)
+print(a-np_det)
